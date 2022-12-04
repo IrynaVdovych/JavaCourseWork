@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2.view.TaxoparkSearchDialogController">
+   <children>
+      <Label text="Search automobiles by average velocity" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="From" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="53.0" />
+      <TextField fx:id="fromField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <Label text="to" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="53.0" />
+      <TextField fx:id="toField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="470.0" AnchorPane.topAnchor="50.0" />
+      <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSearch" prefWidth="50.0" text="Search" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="408.0" AnchorPane.topAnchor="50.0" />
+      <TableView fx:id="autoTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="90.0">
+        <columns>
+          <TableColumn fx:id="regNumberColumn" prefWidth="109.0" text="reg number" />
+          <TableColumn fx:id="brandColumn" prefWidth="77.0" text="brand" />
+            <TableColumn fx:id="modelColumn" prefWidth="78.0" text="model" />
+            <TableColumn fx:id="avgVelocityColumn" prefWidth="96.0" text="avg velocity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
